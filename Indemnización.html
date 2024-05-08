@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>inicio</title>
+  <link rel="stylesheet" href="css/estilo.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="js/indemnisacion.js"></script>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row align-items-center">
+      <div class="col"><img src="img/logointecap.png" alt=""></div>
+      <div class="col text-end align-middle">
+        <img src="img/linkeding.png" class="iconoredes" alt="">
+        <img src="img/facebook.png" class="iconoredes" alt="">
+        <img src="img/instagram.jfif" class="iconoredes" alt="">
+        <img src="img/youtube.png" class="iconoredes" alt="">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="btn-group w-100" role="group" aria-label="Basic example">
+          <a href="index.html" class="btn btn-primary">inicio</a>
+          <a href="empleados.html" class="btn btn-primary">empleados</a>
+          <a href="sueldoliquido.html" class="btn btn-primary">Sueldo líquido</a>
+          <a href="Indemnización.html" class="btn btn-primary">indemnización</a>
+
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <h2>
+          Calcular indemnización
+        </h2>
+        <div class="mb-3">
+          <label for="txtsueldobase" class="form-label">Sueldo base</label>
+          <input type="number" class="form-control" id="txtsueldobase" placeholder="Ingrese su sueldo base ">
+        </div>
+
+        <div class="mb-3">
+          <label for="txtanios" class="form-label">Cantidad de años trabajados</label>
+          <input type="number" class="form-control" id="txtanios" placeholder="Ingrese la cantidad de años trabajados">
+        </div>
+        <div class="mb-3">
+          <label for="txtbono14" class="form-label">Bono 4 proporcional</label>
+          <input type="number" class="form-control" id="txtbono14"
+            placeholder="Ingrese la cantidad de meses trabajados">
+          <input type="text" class="form-control bg-primary-subtle" id="txtcalculobono" placeholder="0.00" readonly>
+        </div>
+        <div class="mb-3">
+          <label for="txtaguinaldo" class="form-label">Aguinaldo proporcional</label>
+          <input type="number" class="form-control" id="txtaguinaldo"
+            placeholder="Ingrese la cantidad de meses trabajados">
+          <input type="text" class="form-control bg-primary-subtle" id="txtcalculoaguinaldo" placeholder="0.00"
+            readonly>
+        </div>
+
+        <div class="mb-3">
+          <label for="txtingresos" class="form-label">Total de ingresos</label>
+          <input type="text" class="form-control bg-primary-subtle" id="txtingresos" readonly>
+        </div>
+
+        <div class="mb-3">
+          <label for="txtsalariopendiente" class="form-label">Salario pendiente</label>
+          <input type="number" class="form-control" id="txtsalariopendiente" placeholder="Ingrese salario pendiente">
+        </div>
+        <div class="mb-3">
+          <label for="txtdeudas" class="form-label">Deudas o cobros pendientes</label>
+          <input type="number" class="form-control" id="txtdeudas"
+            placeholder="Ingrese la cantidad de deudas pendientes ">
+        </div>
+        <div class="mb-3">
+          <input type="submit" onclick="calcularimdenizacion()" class="form-control btn btn-primary" id="btncalcular"
+            value="calcular indemnización">
+          <label for="txtimdenizacion" class="form-label">Indenización</label>
+          <input type="text" class="form-control bg-primary-subtle" id="txtindemnizacion" placeholder="0.00"
+            readonly>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
+</body>
+
+</html>
